@@ -1,0 +1,18 @@
+本仓库涉及以下第三方组件与课程实验原创内容。各组件的版权与许可独立。
+
+1. FR-UNet（基线模型）
+   上游：https://github.com/lseventeen/FR-UNet
+   版权：Copyright (c) 2022 liuwentao
+   许可：MIT License，全文见 FR-UNet/LICENSE。
+   本地改动：数据读取、采样、损失与指标保护、分块推理；网络结构文件
+             models/fr_unet.py 与 models/utils.py 未改动。
+
+2. 本仓库原创部分
+   许可：MIT License，全文见 LICENSE，版权归 Yui-0818。
+   包括：GCU-Net 的模型、数据管线、去描边处理、训练/评估脚本，以及
+         两个模型的 README 与结果整理。
+
+3. 数据
+   医学图像由任课教师提供，版权归原数据提供方。本仓库不分发任何图像、
+   标签文件、预训练权重或训练日志。README 中引用的数据集统计与测试指标
+   来自本地实验记录。

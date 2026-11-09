@@ -1,0 +1,9 @@
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
+numpy==1.26.4
+opencv-python==4.10.0.84
+scikit-learn==1.5.2
+loguru==0.7.2
+tqdm==4.66.5
+ruamel.yaml==0.17.40
+bunch==1.0.1

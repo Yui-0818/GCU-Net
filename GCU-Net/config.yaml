@@ -1,0 +1,22 @@
+model:
+  type: GCU_Net
+  args: {}
+
+loss:
+  type: BCEDiceDSLoss
+  args:
+    weights: [1.0, 0.4, 0.2]
+    bce_weight: 0.5
+
+lr: 1.0e-4
+weight_decay: 1.0e-5
+warmup_epochs: 3
+epochs: 80
+save_dir: saved/
+run_name: GCU_Net_NoLine
+erase_line: true
+val_per_epochs: 4
+amp: true
+threshold: 0.5
+tile_size: 512
+tile_stride: 448
